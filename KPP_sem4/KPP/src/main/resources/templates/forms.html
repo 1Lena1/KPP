@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://wwww.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Laba_KPP</title>
+</head>
+<body>
+    <div>
+      <form action= "/kpp_labs_html" method="get">
+          x +
+          <input type="number" name="val1" th:value="${val1}">
+          =
+          <input type="number" name="val2" th:value="${val2}"><br>
+          Начало интервала
+          <input type="number" name="start" th:value="${start}"><br>
+          Конец интервала
+          <input type="number" name="end" th:value="${end}"><br>
+          <span th:text="${root}"/>
+          <button type="submit" >Подобрать корень</button>
+      </form>
+    </div>
+</body>
+</html>
